@@ -5,6 +5,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/lo
 WORKDIR /var/www/html
 RUN unzip loxury.zip
 RUN cp -rvf loxury/* .
-RUN rm -rf loxury.zip loxury
+RUN rm -rf loxury.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
